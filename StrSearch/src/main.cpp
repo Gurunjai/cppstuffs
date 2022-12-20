@@ -152,10 +152,10 @@ int main() {
     }
     assert(sObj.SearchStr(" This Valid??"));
 
-    sObj = "WHAT IF is";
+    sObj = "WHAT IF ";
     // sObj.Reset("WHAT IF is");
     // sObj.Dump();
-    assert(sObj.SearchStr("The house is on fire, WHAT IF is someone inside"));
+    assert(sObj.SearchStr("The house is on fire, WHAT IF someone is inside"));
 
     sObj.Reset("Don't try it out");
     // sObj.Dump();

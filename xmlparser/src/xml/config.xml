@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CONFIG>
+        <item>
+                <dirs>/ghostcache/ghost3 /dev/hda4 13100 16 256</dirs>
+                <dirs>/ghostcache/ghost3 /dev/sda1 26300 16 256</dirs>
+                <dirs>/ghostcache2/ghost3 /dev/sdb1 22100 16 256</dirs>
+                <dirs>/ghostcache3/ghost3 /dev/sdc1 24200 16 256</dirs>
+                <dirs>/ghostcache4/ghost3 /dev/sdd1 28300 16 256</dirs>
+                <dirs>/ghostcache5/ghost3 /dev/sde1 28300 16 256</dirs>
+                <dirs>/ghostcache6/ghost3 /dev/sdf1 28300 16 256</dirs>
+        </item>
+</CONFIG>
