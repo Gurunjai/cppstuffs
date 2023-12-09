@@ -4,6 +4,7 @@
 #include <algorithm>
 
 using uint = unsigned int;
+/* A Simple hash table with collision involved */
 class hash_map
 {
     std::vector<int> data;
@@ -41,6 +42,7 @@ public:
     }
 };
 
+/* A hash table which addresses collision by Chained Addressing*/
 class list_hash_map
 {
     std::vector<std::list<int>> data;
@@ -103,17 +105,20 @@ void testHashMap() {
     map.insert(2);
     map.insert(25);
     map.insert(49);
+    map.insert(100);
     print(25);
+    print(2);
+    print(100);
 
     map.insert(4);
     map.insert(290);
     
     print(25);
     print(49);
-    print(100);
+    print(1000);
 
-    map.insert(100);
-    print(100);
+    map.insert(1000);
+    print(1000);
     map.erase(25);
 }
 
@@ -132,17 +137,20 @@ void testListHashMap() {
     map.insert(2);
     map.insert(25);
     map.insert(49);
+    map.insert(100);
     print(25);
+    print(2);
+    print(100);
 
     map.insert(4);
     map.insert(290);
     
     print(25);
     print(49);
-    print(100);
+    print(1000);
 
-    map.insert(100);
-    print(100);
+    map.insert(1000);
+    print(1000);
     map.erase(25);
 }
 

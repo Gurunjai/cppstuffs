@@ -98,7 +98,7 @@ private:
         if ( pat != NULL )
         {
             m_searchPatLen = strlen(pat);
-            m_searchPattern = new char[m_searchPatLen];
+            m_searchPattern = new char[m_searchPatLen + 1];
             strncpy(m_searchPattern, pat, m_searchPatLen);
             m_searchPattern[m_searchPatLen] = '\0';
 
@@ -152,7 +152,7 @@ int main() {
     }
     assert(sObj.SearchStr(" This Valid??"));
 
-    sObj = "WHAT IF ";
+    sObj = "WHAT IF";
     // sObj.Reset("WHAT IF is");
     // sObj.Dump();
     assert(sObj.SearchStr("The house is on fire, WHAT IF someone is inside"));
